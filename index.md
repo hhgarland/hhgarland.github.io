@@ -1,1 +1,1 @@
-Hello world
+Hello and welcome to my blog where I post about all things VoIP. This is somewhat of a knowledge base for my myself, but I hope others find this site useful. I can't take much credit for the information here as it's been cobbled together from other sites, blogs, discussion posts, etc..
