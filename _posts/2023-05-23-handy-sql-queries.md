@@ -5,7 +5,7 @@ date: 2023-05-23
 
 Here's a growing list of handy SQL queries that I've found useful.
 
-### CUCM
+## CUCM
 
 Gather phone information on a specific node:
 
@@ -31,7 +31,7 @@ Find a specific external number mask:
 run sql select dnorpattern, d.description, e164mask from devicenumplanmap inner join numplan on fknumplan=numplan.pkid join device d on fkdevice = d.pkid where e164mask= "3335683130"
 ```
 
-### CUC
+## CUC
 
 List users with total, inbox, and deleted messages:
 
@@ -44,7 +44,7 @@ List messages for a specific mailbox:
 ```
 run cuc dbquery unitymbxdb1 select alias as UserID, count (*) as messages, sum(case when deleted='0' then 1 else 0 end) as Inboxmessages, sum(case when deleted='1' then 1 else 0 end) as Deletedmessages from vw_message, unitydirdb: vw_mailbox, unitydirdb:vw_user where mailboxobjectid in (select mailboxid from vw_mailbox where unitydirdb:vw_user.objectid = unitydirdb:vw_mailbox.userobjectid) and alias like 'jsmith%' group by alias order by messages desc
 ```
-### UCCX
+## UCCX
 
 Check skill mapping:
 
