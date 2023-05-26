@@ -1,6 +1,7 @@
 ---
 title: Handy SQL Queries
 date: 2023-05-23
+tags: sql cucm cuc uccx
 ---
 
 Here's a growing list of handy SQL queries that I've found useful.
